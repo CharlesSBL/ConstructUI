@@ -1,11 +1,9 @@
 <!-- ![StructUI Logo](./Struct-UI.svg) -->
 
-
 ## Motivation
 
-StructUI is a lightweight and straightforward library designed for developing web applications. 
-It aims to simplify the process of building modern, responsive web applications by using a class-based approach to encapsulate HTML and CSS logic. 
-StructUI addresses the common issues found in existing web frameworks, such as overly complex APIs and convoluted logic, by offering a simple, intuitive, and reusable set of building blocks.
+StructUI is a lightweight and straightforward library designed for developing web applications. It aims to simplify the process of building modern, responsive web applications by using a class-based approach to encapsulate HTML and CSS logic. StructUI addresses the common issues found in existing web frameworks, such as overly complex APIs and convoluted logic, by offering a simple, intuitive, and reusable set of building blocks.
+
 ## Prerequisites
 
 Before you begin, ensure you have the following installed on your system:
@@ -20,33 +18,36 @@ Follow these steps to set up and run the project.
 
 Navigate to the project directory and install the necessary dependencies:
 
-- `bun install`
+```sh
+bun install
+```
 
 ### 2. Compile the Frontend
 
-Build first the project and run server "node":
+Build the project and run the server:
 
-- `bun run watch`
-- `bun run node`
+```sh
+bun run start
+```
 
-This will create a production-ready build of the frontend in the \`dist\` directory.
+This will create a production-ready build of the frontend in the `dist` directory.
 
 ### 3. Open the Application
 
-1. Once the bun server is running, open your browser and navigate to:
+Once the bun server is running, open your browser and navigate to:
 
-   [http://localhost:3000/index.html](http://localhost:3000/index.html)
+[http://localhost:3000/index.html](http://localhost:3000/index.html)
 
-   You should see the To-Do list application running.
+You should see the To-Do list application running.
 
 ## Project Structure
 
 Here is an overview of the project structure:
 
-- `./server/Server.js` -> Nodejs server
-- `./src/main.ts` -> main file
-- `./src/components` -> all components for todo app
-- `./dist` -> all build files
+- `./server/Server.js` -> Node.js server
+- `./src/main.ts` -> Main file
+- `./src/components/raw` -> All components
+- `./dist` -> All build files
 
 ## Backend Options
 
@@ -54,9 +55,10 @@ Here is an overview of the project structure:
 
 The following npm scripts are available:
 
-- \`npm run node\`: Run bun server for the frontend application.
-- \`npm run watch\`: compile src files without nodejs and watch change.
-- \`npm run clean\`: clean all compile files in dist.
+- `npm run node`: Run bun server for the frontend application.
+- `npm run watch`: Compile src files without Node.js and watch for changes.
+- `npm run clean`: Clean all compiled files in `dist`.
+- `npm run start`: Run node and watch option.
 
 ## Contributing
 

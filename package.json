@@ -3,16 +3,18 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "description": "OOP frontend",
+  "author": "Karol Sobolewski",
+  "license": "ISC",
   "scripts": {
     "watch": "tsc && vite build --watch",
     "clean": "clear && rm -rf ./dist/*",
-    "node": "bun ./server/Server.js"
+    "node": "bun ./server/Server.js",
+    "start": "concurrently \"npm run watch\" \"npm run node\""
   },
   "devDependencies": {
     "typescript": "^5.2.2",
-    "vite": "^5.2.0"
-  },
-  "description": "OOP frontend",
-  "author": "Karol Sobolewski",
-  "license": "ISC"
+    "vite": "^5.2.0",
+    "concurrently": "^7.0.0"
+  }
 }
