@@ -1,16 +1,26 @@
-<!-- ![StructUI Logo](./Struct-UI.svg) -->
+<!-- <p align="center">
+    <img src="./Struct-UI.svg" alt="StructUI Logo" width="200">
+</p> -->
 
-## Motivation
+<h1 align="center">StructUI</h1>
 
-StructUI is a lightweight library designed for developing web applications. It simplifies building modern, responsive web applications by using a class-based approach to encapsulate HTML and CSS logic. StructUI addresses common issues in existing web frameworks, such as overly complex APIs and convoluted logic, by offering a simple, intuitive, and reusable set of building blocks.
+<p align="center">
+    A lightweight library for developing modern, responsive web applications.
+</p>
 
-## Prerequisites
+---
+
+## 🚀 Motivation
+
+StructUI simplifies building web applications by using a class-based approach to encapsulate HTML and CSS logic. It addresses common issues in existing web frameworks, such as overly complex APIs and convoluted logic, by offering a simple, intuitive, and reusable set of building blocks.
+
+## 📋 Prerequisites
 
 Ensure you have the following installed on your system:
 
-- bun.js (version 1.1.8 or later)
+- [bun.js](https://bun.sh) (version 1.1.8 or later)
 
-## Getting Started
+## 🛠️ Getting Started
 
 Follow these steps to set up and run the project.
 
@@ -40,16 +50,22 @@ Once the bun server is running, open your browser and navigate to:
 
 You should see the application running.
 
-## Project Structure
+## 📂 Project Structure
 
 Overview of the project structure:
 
-- `./server/Server.js` -> Node.js server
-- `./src/main.ts` -> Main file
-- `./src/components/raw` -> All components
-- `./dist` -> All build files
+```plaintext
+.
+├── server
+│   └── Server.js       # Node.js server
+├── src
+│   ├── main.ts         # Main file
+│   └── components
+│       └── raw         # All components
+└── dist                # All build files
+```
 
-## Scripts
+## 📜 Scripts
 
 Available npm scripts:
 
@@ -58,10 +74,16 @@ Available npm scripts:
 - `npm run clean`: Clean all compiled files in `dist`.
 - `npm run start`: Run node and watch option.
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Feel free to open issues or submit pull requests.
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+<p align="center">
+    Made with ❤️ by the StructUI team
+</p>
