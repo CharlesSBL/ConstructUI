@@ -1,5 +1,3 @@
-# Java-Js-ToDo-List
-
 ![StructUI Logo](./StructUI.svg)
 
 
