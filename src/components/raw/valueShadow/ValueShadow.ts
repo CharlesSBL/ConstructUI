@@ -1,4 +1,4 @@
-import I_shadow from "../../interfaces/I_shadow";
+import I_shadow from "../interfaces/I_shadow";
 import ShadowColor from "./valueShadowColor/ValueShadowColor";
 import ShadowPosition from "./valueShadowPosition/ValueShadowPosition";
 
