@@ -12,7 +12,7 @@
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
   },
-  "description": "Object oriented programming frontend with nodejs and java",
+  "description": "OOP frontend",
   "author": "Karol Sobolewski",
   "license": "ISC"
 }
