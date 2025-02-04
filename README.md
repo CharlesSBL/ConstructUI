@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./StructUI.png" alt="StructUI Logo" width="400">
+    <img src="./StructUI.png" alt="StructUI Logo" >
 </p>
 
 <h1 align="center">StructUI</h1>
