@@ -29,7 +29,7 @@ export default class Tag {
     this.elem.innerText = text;
   }
 
-  public setProps(type: string, inner: string): void {
+  public setAttribute(type: string, inner: string): void {
     this.elem.setAttribute(type, inner);
   }
 
@@ -39,6 +39,10 @@ export default class Tag {
 
   public setClass(value: string) {
     this.elem.setAttribute("class", value);
+  }
+
+  public addCss(property: string, value: string): void {
+    this.elem.style.setProperty(property, value);
   }
 
   public setAnimation(type: AnimationEnumTypes, value: string): void {

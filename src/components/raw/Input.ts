@@ -4,8 +4,8 @@ export default class Input extends Tag {
   constructor() {
     super("input");
 
-    this.setProps("type", "text");
-    this.setProps("size", "10");
+    this.setAttribute("type", "text");
+    this.setAttribute("size", "10");
   }
 
   getInput(): HTMLInputElement {

@@ -1,0 +1,11 @@
+.glass {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(10px);
+    color: grey;
+}

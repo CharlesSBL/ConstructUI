@@ -4,4 +4,8 @@ body {
 }
 
 .root {
+    background: black url('./components/user/hello-demo/images/image-51.png') center/cover no-repeat;
 }
+
+
+
