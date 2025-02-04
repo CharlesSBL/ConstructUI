@@ -22,7 +22,7 @@ Navigate to the project directory and install the necessary dependencies:
 bun install
 ```
 
-### 2. Compile the Frontend
+### 2. Compile and run full stack app
 
 Build the project and run the server:
 
