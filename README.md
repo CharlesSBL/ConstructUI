@@ -1,6 +1,6 @@
-<!-- <p align="center">
-    <img src="./Struct-UI.svg" alt="StructUI Logo" width="200">
-</p> -->
+<p align="center">
+    <img src="./StructUI.png" alt="StructUI Logo" width="400">
+</p>
 
 <h1 align="center">StructUI</h1>
 
