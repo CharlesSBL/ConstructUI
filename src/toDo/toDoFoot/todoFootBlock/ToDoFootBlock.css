@@ -1,0 +1,11 @@
+.todo-foot-block {
+    padding: 0.25rem;
+    /* background-color: purple; */
+    border-radius: 0.25rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0.5rem 0;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Java-JS",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build --watch",
+    "preview": "vite preview",
+    "java": "javac -d dist -sourcepath src server/Server.java && java -cp dist Server",
+    "clean": "clear && rm -rf ./dist/*"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.2.0"
+  },
+  "description": "Object oriented programming frontend with nodejs and java",
+  "author": "Karol Sobolewski",
+  "license": "ISC"
+}

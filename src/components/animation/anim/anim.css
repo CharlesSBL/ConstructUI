@@ -1,0 +1,21 @@
+@keyframes Ianim {
+  0% {
+    opacity: 0.5;
+    transform: translateY(-50vh);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(30vh);
+  }
+}
+
+#anim {
+  position: absolute;
+  backdrop-filter: blur(10px);
+  padding: 10px;
+}
