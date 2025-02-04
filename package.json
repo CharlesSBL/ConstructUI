@@ -1,14 +1,12 @@
 {
-  "name": "Java-JS",
+  "name": "StructUI",
   "private": true,
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build --watch",
-    "preview": "vite preview",
-    "java": "javac -d dist -sourcepath src server/Server.java && java -cp dist Server",
-    "clean": "clear && rm -rf ./dist/*"
+    "watch": "tsc && vite build --watch",
+    "clean": "clear && rm -rf ./dist/*",
+    "node": "bun ./server/Server.js"
   },
   "devDependencies": {
     "typescript": "^5.2.2",

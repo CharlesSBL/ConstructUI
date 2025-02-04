@@ -13,7 +13,6 @@ class Root extends Tag {
     // setting as root tag in body html
     this.setClass("root");
     this.render();
-
   }
 
   // singleton check if exist and run constructor if need
