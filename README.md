@@ -1,4 +1,4 @@
-![StructUI Logo](./StructUI.svg)
+<!-- ![StructUI Logo](./Struct-UI.svg) -->
 
 
 ## Motivation
