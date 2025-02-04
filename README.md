@@ -2,7 +2,7 @@
     <img src="./StructUI.png" alt="StructUI Logo" >
 </p>
 
-<h1 align="center">StructUI</h1>
+<!-- <h1 align="center">StructUI</h1> -->
 
 <p align="center">
     A lightweight library for developing modern, responsive web applications.
