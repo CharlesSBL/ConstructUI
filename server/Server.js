@@ -3,40 +3,33 @@ const fs = require('fs');
 const path = require('path');
 
 // Function to determine the content type based on file extension
-function getContentType(filePath) {
-    if (filePath.endsWith('.html')) {
-        return 'text/html';
-    } else if (filePath.endsWith('.css')) {
-        return 'text/css';
-    } else if (filePath.endsWith('.js')) {
-        return 'application/javascript';
-    } else {
-        return 'application/octet-stream';
-    }
-}
+const getContentType = (filePath) => {
+    const ext = path.extname(filePath).toLowerCase();
+    const mimeTypes = {
+        '.html': 'text/html',
+        '.css': 'text/css',
+        '.js': 'application/javascript',
+    };
+    return mimeTypes[ext] || 'application/octet-stream';
+};
 
 // Handler for serving static files
-function handleStaticFile(req, res) {
+const handleStaticFile = (req, res) => {
     const filePath = path.join(__dirname, '../dist', req.url === '/' ? 'index.html' : req.url);
 
     fs.readFile(filePath, (err, data) => {
         if (err) {
-            if (err.code === 'ENOENT') {
-                res.writeHead(404);
-                res.end();
-            } else {
-                res.writeHead(500);
-                res.end();
-            }
+            res.writeHead(err.code === 'ENOENT' ? 404 : 500);
+            res.end();
         } else {
             res.writeHead(200, { 'Content-Type': getContentType(filePath) });
             res.end(data);
         }
     });
-}
+};
 
 // Handler for the API endpoint
-function handleApi(req, res) {
+const handleApi = (req, res) => {
     if (req.method === 'GET') {
         const response = JSON.stringify({ message: 'Hello, world!' });
         res.writeHead(200, { 'Content-Type': 'application/json', 'Content-Length': Buffer.byteLength(response) });
@@ -45,7 +38,7 @@ function handleApi(req, res) {
         res.writeHead(405);
         res.end();
     }
-}
+};
 
 // Creating the server and routing requests
 const server = http.createServer((req, res) => {
