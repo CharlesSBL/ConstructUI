@@ -9,7 +9,6 @@ class Root extends Tag {
     super("div");
     this.setClass("root");
     this.render();
-
     glassHello(this);
   }
 

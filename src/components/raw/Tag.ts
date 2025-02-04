@@ -21,8 +21,8 @@ export default class Tag {
     this.elem = elem;
   }
 
-  public addChild(elem: HTMLElement): void {
-    this.elem.appendChild(elem);
+  public addChild(elem: Tag): void {
+    this.elem.appendChild(elem.getElem());
   }
 
   public setText(text: string): void {

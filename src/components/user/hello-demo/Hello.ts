@@ -14,7 +14,7 @@ const createHelloTag = (): Tag => {
 
 function hello (tag: Tag): void {
     const helloTag = createHelloTag();
-    tag.addChild(helloTag.getElem());
+    tag.addChild(helloTag);
 };
 
 export default hello;

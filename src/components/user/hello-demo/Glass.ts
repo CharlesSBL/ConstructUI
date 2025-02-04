@@ -14,7 +14,7 @@ class Glass extends Tag {
 
 const glass = (tag: Tag): void => {
     const glassElement = new Glass();
-    tag.addChild(glassElement.getElem());
+    tag.addChild(glassElement);
 }
 
 export default glass;
