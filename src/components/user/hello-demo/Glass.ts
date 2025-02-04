@@ -2,16 +2,19 @@ import hello from "./Hello";
 import './Glass.css'
 import Tag from "../../raw/Tag";
 
-const createGlassElement = (): Tag => {
-    const glass = new Tag("div");
-    glass.setClass("glass");
-    return glass;
+class Glass extends Tag {
+    constructor (){
+        super("div");
+
+        this.setClass("glass");
+
+        hello(this);
+    }
 }
 
 const glass = (tag: Tag): void => {
-    const glassElement = createGlassElement();
+    const glassElement = new Glass();
     tag.addChild(glassElement.getElem());
-    hello(glassElement);
 }
 
 export default glass;
